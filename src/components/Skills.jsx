@@ -1,35 +1,50 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const SKILLS = [
   {
-    label: 'Languages',
-    icon: '</>',
-    tags: ['Python', 'Java', 'TypeScript', 'SQL'],
+    label: "Languages",
+    icon: "</>",
+    tags: ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
   },
   {
-    label: 'AI & Machine Learning',
-    icon: '◈',
-    tags: ['PyTorch', 'YOLOv8', 'OpenCV', 'MediaPipe', 'NLP Pipelines'],
+    label: "AI & Machine Learning",
+    icon: "◈",
+    tags: ["PyTorch", "YOLO", "OpenCV", "MediaPipe", "NLP Pipelines"],
   },
   {
-    label: 'Frameworks',
-    icon: '⬡',
-    tags: ['FastAPI', 'React', 'React Native', 'Spring Boot'],
+    label: "Frameworks",
+    icon: "⬡",
+    tags: ["FastAPI", "React", "React Native", "Spring Boot"],
   },
   {
-    label: 'Tools & Cloud',
-    icon: '⊕',
-    tags: ['Docker', 'AWS', 'Jenkins', 'Git', 'Supabase', 'Appium', 'Playwright'],
+    label: "Tools & Cloud",
+    icon: "⊕",
+    tags: [
+      "Docker",
+      "AWS",
+      "Jenkins",
+      "Git",
+      "Supabase",
+      "Appium",
+      "Playwright",
+    ],
   },
   {
-    label: 'Core Concepts',
-    icon: '≋',
-    tags: ['System Design', 'REST APIs', 'CI/CD Pipelines', 'Real-time Systems'],
+    label: "Core Concepts",
+    icon: "≋",
+    tags: [
+      "Deep Learning",
+      "System Design",
+      "Full Stack",
+      "REST APIs",
+      "CI/CD Pipelines",
+      "Real-time Systems",
+    ],
   },
-]
+];
 
 export default function Skills() {
-  const ref = useScrollAnimation()
+  const ref = useScrollAnimation();
 
   return (
     <section id="skills">
@@ -44,7 +59,9 @@ export default function Skills() {
               </div>
               <div className="skill-tags">
                 {tags.map((tag) => (
-                  <span key={tag} className="skill-tag">{tag}</span>
+                  <span key={tag} className="skill-tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
@@ -52,5 +69,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

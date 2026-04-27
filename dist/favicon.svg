@@ -1,0 +1,8 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#FAFAF8" rx="6"/>
+
+  <!-- Elegant serif A in terracotta -->
+  <path d="M 18 56 L 32 8 L 46 56 M 24 40 L 40 40"
+        stroke="#C4533A" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
